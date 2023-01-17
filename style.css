@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  text-align: center;
+  background-color: bisque;
+  height: 100vh;
+  font-family: "Pacifico", cursive;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background-color: chocolate;
+  width: 70%;
+  height: 80%;
+  margin: auto;
+  border-radius: 1rem;
+  padding: 3rem;
+}
+.input-box {
+  height: 8rem;
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  /* border: 2px solid red; */
+}
+h1 {
+  font-size: 41px;
+  color: white;
+}
+#input {
+  padding: 0.3rem 1.5rem;
+  border-radius: 8px;
+  font-size: 18px;
+  text-align: center;
+  border: none;
+  outline: none;
+  height: 2.6rem;
+  font-family: "Pacifico", cursive;
+}
+
+#btn {
+  padding: 0.3rem 1.5rem;
+  height: 2.7rem;
+  border-radius: 8px;
+  border: none;
+  background-color: aqua;
+  font-size: larger;
+  font-weight: 700;
+  /* font-family: "Pacifico", cursive; */
+}
+.list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.list li {
+  width: 70%;
+  /* border: 2px solid red; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: aquamarine;
+  padding: 0.5rem;
+  border-radius: 8px;
+}
