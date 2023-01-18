@@ -1,28 +1,38 @@
-@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
+
+@import url("https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,500;0,900;1,600&display=swap");
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
+  background-image: url("./pngtree-blackboard-education-creative-line-background-image_398166.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   text-align: center;
-  background-color: bisque;
   height: 100vh;
-  font-family: "Pacifico", cursive;
+  /* font-family: "Pacifico", cursive; */
+  font-family: "Bitter", serif;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .container {
-  background-color: chocolate;
-  width: 70%;
-  height: 80%;
+  background-color: rgba(255, 228, 196, 0.436);
+  width: 60%;
+  height:max-content;
   margin: auto;
   border-radius: 1rem;
   padding: 3rem;
+  min-width: 400px;
+  min-height:max-content;
 }
+
 .input-box {
   height: 8rem;
   margin-top: 1rem;
@@ -32,9 +42,10 @@ body {
   gap: 0.5rem;
   /* border: 2px solid red; */
 }
+
 h1 {
-  font-size: 41px;
-  color: white;
+  font-size: 50px;
+  color: chocolate;
 }
 #input {
   padding: 0.3rem 1.5rem;
@@ -44,19 +55,22 @@ h1 {
   border: none;
   outline: none;
   height: 2.6rem;
-  font-family: "Pacifico", cursive;
+  font-family: "Bitter", serif;
+  /* font-family: "Pacifico", cursive; */
 }
 
 #btn {
+  color: white;
   padding: 0.3rem 1.5rem;
   height: 2.7rem;
   border-radius: 8px;
   border: none;
-  background-color: aqua;
+  background-color: chocolate;
   font-size: larger;
   font-weight: 700;
   /* font-family: "Pacifico", cursive; */
 }
+
 .list {
   display: flex;
   flex-direction: column;
@@ -72,6 +86,44 @@ h1 {
   justify-content: space-between;
   align-items: center;
   background-color: aquamarine;
-  padding: 0.5rem;
+  padding: 0.6rem;
   border-radius: 8px;
+}
+
+li:hover{
+ animation: myAni .3s ;
+}
+
+li:nth-child(even) {
+  background-color: rgb(84, 105, 143);
+}
+
+i.color {
+  color: rgb(255, 182, 47);
+}
+
+p.through {
+  text-decoration: line-through;
+  color: rgba(187, 134, 230, 0.949);
+}
+
+.fa-trash-can:hover{
+color: red;
+}
+
+@keyframes myAni{
+    0%{
+       
+        transform: rotateX(0deg)
+    }
+    33%{
+      opacity: 0.7;
+        transform: rotateX(30deg)
+    }
+    66%{
+        transform: rotateX(-30deg)
+    }
+    100%{
+        transform: rotateX(0deg);
+    }
 }
